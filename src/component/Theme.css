@@ -1,0 +1,22 @@
+  .theme{
+    display: flex;
+    justify-content:flex-end;
+    width:100vw;
+}
+       
+  .theme-btn{
+    margin-top: 20px;
+    margin-right:20px ;
+    cursor: pointer;
+    mix-blend-mode: color-burn;
+   border: none;
+    border-radius: 50%;
+    box-shadow: 4px 8px 8px lightblue;
+  } 
+   
+button img {
+  padding:0.4rem;
+  width:25px;
+  height:25px;
+ 
+}

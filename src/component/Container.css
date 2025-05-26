@@ -1,0 +1,150 @@
+
+#container{
+    margin: auto;
+    height: 80vh;
+    width: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 2.5rem;
+    box-shadow: 8px 8px 8px 8px  rgb(164, 204, 219);
+  
+}
+.head{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:2rem;
+}
+img{
+    width:50px;
+    height:50px;
+}
+.light {
+    /* background-color:rgb(203, 225, 245); */
+   color:black;
+}
+
+.dark {
+    color:aliceblue;
+    /* background-color:rgb(18, 16, 16); */
+  }
+
+.app-name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    filter: drop-shadow(1px 2px rgb(164, 204, 219));
+   
+}
+
+
+
+ #inputc {
+    padding:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1.5rem;
+    flex-direction: column;
+}
+
+ input {
+    cursor: pointer;
+    width: 30vw;
+    height: 2rem;
+    text-align: center;
+    border-radius:0.7rem;
+    background-color: aliceblue;
+}
+input:hover{
+    scale:1.1;
+}
+.light input{
+    background-color:rgb(18, 16, 16);
+    color:white;
+}
+
+ #con-btn {
+    padding: 0.6rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+#con-btn:hover{
+    scale:0.9;
+  
+}
+.dark #con-btn{
+color:black;
+background-color: aliceblue;
+
+} 
+.light #con-btn{
+    background-color:black;
+    color: white;
+}
+
+ #outputc {
+    gap:0.7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+ #outputc p {
+    font-weight: bold;
+    width: 16vw;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:1rem;
+  
+   
+}
+.dark #outputc p{
+    color:black;
+    background-color: aliceblue;
+    box-shadow: 2px 3px 4px white;
+   
+}
+.light #outputc p{
+    color:aliceblue;
+    background-color: black;
+    box-shadow: 2px 3px 4px black;
+}
+@media (max-width:760px) {
+    #container{
+        height:70vh;
+        width:85vw;
+        
+    }
+    input {
+        width:60vw;
+       
+    }
+    .head{
+        gap:0.5rem;
+    }
+    #outputc p {
+        width:36vw;
+    }
+}
+@media (min-width:760px) and (max-width:1024px) {
+    #container{
+        height:70vh;
+        width:85vw;
+    } 
+    #outputc p {
+        width:35vw;
+    }
+}
+@media (min-width:1024px) {
+    #container{
+        height:80vh;
+        width:40vw;
+    }  
+    #outputc p {
+        width:16vw;
+    }
+}
